@@ -20,13 +20,6 @@
             background-color: #880000;
         }
         
-        #logo-img {
-            background: url('../images/logo-150.jpg') no-repeat;
-            width: 150px;
-            height: 150px;
-            margin: 10px 15px 10px 0;
-        }
-        
         .navbar-brand {
             padding-top: 25px;
         }
@@ -89,28 +82,13 @@
         #nav-list a:hover {
             background: #cc0000;
         }
-        
-        #phone-number {
-            font-size: 1.8em;
-        }
-        
-        #login-button {
-            font-size: 1em;
-            line-height: 40px;
-            color: #ababab;
-        }
         /* END HEADER */
         /* Home Page */
         
-        .container .jumbotron {
-            box-shadow: 0 0 50px #ccbbaa;
-            border: 2px solid #ccbbaa;
-        }
-        
-        #menu-tile,
-        #specials-tile,
-        #map-tile {
-            height: 250px;
+        #chicken-tile,
+        #beef-tile,
+        #sushi-tile {
+            height: autopx;
             width: 100%;
             margin-bottom: 15px;
             position: relative;
@@ -118,25 +96,15 @@
             overflow: hidden;
         }
         
-        #menu-tile:hover,
-        #specials-tile:hover,
-        #map-tile:hover {
+        #chicken-tile:hover,
+        #beef-tile:hover,
+        #sushi-tile:hover {
             box-shadow: 0 1px 5px 1px #ccbbaa;
         }
         
-        #menu-tile {
-            background: url('../images/menu-tile.jpg') no-repeat;
-            background-position: center;
-        }
-        
-        #specials-tile {
-            background: url('../images/specials-tile.jpg') no-repeat;
-            background-position: center;
-        }
-        
-        #menu-tile span,
-        #specials-tile span,
-        #map-tile span {
+        #chicken-tile span,
+        #beef-tile span,
+        #sushi-tile span {
             position: absolute;
             bottom: 0;
             right: 0;
@@ -148,94 +116,20 @@
             color: #ababab;
             opacity: .8;
         }
-        /* End Home Page */
-        /* Menu Categories Page */
         
-        .category-tile {
-            position: relative;
-            border: 2px solid #ccbbaa;
-            overflow: hidden;
-            width: 200px;
-            height: 200px;
-            margin: 0 auto 15px;
-        }
-        
-        .category-tile span {
-            position: absolute;
-            bottom: 0;
-            right: 0;
-            width: 100%;
-            text-align: center;
-            font-size: 1.2em;
-            text-transform: uppercase;
-            background-color: #880000;
+        .inner-text {
+            text-decoration: none;
+            text-align: left;
             color: #ababab;
-            opacity: 0.8;
+            padding: 40px 5px 5px 5px;
         }
         
-        .category-tile:hover {
-            box-shadow: 0 1px 5px 1px #ccbbaa;
+        h2 {
+            font-family: 'Oxygen', sans-serif;
+            color: #ababab;
+            text-shadow: 2px 2px 2px #222;
         }
-        
-        #menu-categories-title+div {
-            margin-bottom: 50px;
-        }
-        /* End Menu Categories Page */
-        /* Single Category Page */
-        
-        .menu-item-tile {
-            margin-bottom: 25px;
-        }
-        
-        .menu-item-tile hr {
-            width: 80%;
-        }
-        
-        .menu-item-tile .menu-item-price {
-            font-size: 1.1em;
-            text-align: right;
-            margin-top: -15px;
-            margin-right: -15px;
-        }
-        
-        .menu-item-tile .menu-item-price span {
-            font-size: .6em;
-        }
-        
-        .menu-item-photo {
-            position: relative;
-            border: 2px solid #ccbbaa;
-            overflow: hidden;
-            padding: 0;
-            margin-right: -15px;
-            margin-left: auto;
-            margin-bottom: 20px;
-            margin-top: 20px;
-            max-width: 250px;
-        }
-        
-        .menu-item-photo div {
-            position: absolute;
-            bottom: 0;
-            right: 0;
-            width: 80px;
-            background-color: #880000;
-            text-align: center;
-        }
-        
-        .menu-item-description {
-            padding-right: 30px;
-        }
-        
-        .menu-item-title {
-            margin: 50 0 10px;
-        }
-        
-        .menu-item-details {
-            font-size: .9em;
-            font-style: italic;
-        }
-        /* End Single Category Page */
+        /* End Home Page */
         /* Large devices only */
         
         @media (min-width: 1200px) {
@@ -248,12 +142,6 @@
         
         @media (min-width: 992px) and (max-width: 1199px) {
             /* Header */
-            #logo-img {
-                background: url('../images/logo-100.jpg') no-repeat;
-                width: 100px;
-                height: 100px;
-                margin: 5px 5px 5px 0px;
-            }
             .navbar-brand {
                 padding-top: 20px;
                 height: 100px;
@@ -263,17 +151,8 @@
                 margin-top: 6px;
                 margin-bottom: 0px;
             }
-            #login-button {
-                font-size: 0.8em;
-                line-height: 20px;
-                margin-top: 0px;
-            }
             #nav-list a {
                 font-size: 0.9em;
-            }
-            #phone-number {
-                font-size: 1.8em;
-                font-weight: bold;
             }
             /* End Header*/
             /* Home Page */
@@ -298,24 +177,11 @@
             .navbar-header {
                 height: 120px;
             }
-            #login-button {
-                font-size: 0.8em;
-                line-height: 20px;
-                margin-top: 0px;
-            }
             #nav-list a {
                 font-size: 0.8em;
             }
-            #phone-number {
-                font-size: 1.3em;
-                font-weight: bold;
-            }
             /* End Header */
             /* Home Page */
-            .container .jumbotron {
-                background: url('../images/interior_768.jpg') no-repeat;
-                height: 432px;
-            }
             /* End Home Page */
         }
         /* Extra-small devices only */
@@ -341,34 +207,10 @@
                 font-size: 1em;
                 margin-right: 5px;
             }
-            #call-button>a {
-                font-size: 1.5em;
-                display: block;
-                margin: 35px 20px;
-                padding: 10px;
-                border: 2px solid #cc0000;
-                background-color: #ccbbaa;
-                color: #880000;
-            }
-            #xs-deliver {
-                margin-top: 5px;
-                font-size: .7em;
-                letter-spacing: .1em;
-                text-transform: uppercase;
-            }
-            #login-button {
-                font-size: 0.8em;
-                line-height: 20px;
-                margin-top: 0px;
-            }
             /* End Header */
             /* Home Page */
-            .container .jumbotron {
-                margin-top: 30px;
-                padding: 0;
-            }
-            #menu-tile,
-            #specials-tile {
+            #chicken-tile,
+            #beef-tile {
                 width: 360px;
                 margin: 0 auto 15px;
             }
@@ -406,8 +248,8 @@
             }
             /* End Header */
             /* Home Page */
-            #menu-tile,
-            #specials-tile {
+            #chicken-tile,
+            #beef-tile {
                 width: 280px;
                 margin: 0 auto 15px;
             }
@@ -420,10 +262,6 @@
                 width: 100%;
             }
             /* End Home Page */
-        }
-        
-        .jumbotron {
-            background-color: rgb(36, 36, 36);
         }
         
         .panel-footer {
@@ -439,26 +277,4 @@
         
         .panel-footer div.row {
             margin-bottom: 35px;
-        }
-        
-        #hours,
-        #address {
-            line-height: 2;
-        }
-        
-        #hours>span,
-        #address>span {
-            font-size: 1.3em;
-        }
-        
-        #testimonials {
-            font-style: italic;
-        }
-        
-        #testimonials p:nth-child(2) {
-            margin-top: 25px;
-        }
-        
-        .helloInput {
-            width: 300px;
         }
