@@ -256,7 +256,8 @@
             /* End Header */
             /* Home Page */
             #chicken-tile,
-            #beef-tile {
+            #beef-tile,
+            #sushi-tile {
                 width: 280px;
                 margin: 0 auto 15px;
             }
