@@ -121,7 +121,14 @@
             text-decoration: none;
             text-align: left;
             color: #ababab;
-            padding: 40px 5px 5px 5px;
+            padding: 10px 5px 5px 5px;
+        }
+        
+        .backref {
+            text-align: left;
+            color: #ababab;
+            padding: 5px 5px 5px 5px;
+            text-shadow: 2px 2px 2px #222;
         }
         
         h2 {
